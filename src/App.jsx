@@ -3,6 +3,8 @@
 
 import AboutMe from "./components/AboutMe"
 import Banner from "./components/Banner"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import ProjectSlider from "./components/ProjectSlider"
 import Services from "./components/Services"
@@ -18,6 +20,8 @@ function App() {
       <AboutMe></AboutMe>
       <Services></Services>
       <ProjectSlider></ProjectSlider>
+      <Contact></Contact>
+      <Footer></Footer>
       
      
     </div>

@@ -1,8 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import img from "./../assets/IMG_20231210_232358.jpg"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaAddressCard, FaCalendar, FaEnvelope, FaGithub, FaLaptopHouse, FaLinkedin, FaPhone, FaUser } from 'react-icons/fa';
+import { FaAddressCard, FaBookOpen, FaBookReader, FaCalendar, FaEnvelope, FaGithub, FaLaptopHouse, FaLinkedin, FaPhone, FaUser } from 'react-icons/fa';
 import { Link } from "react-router-dom";
-// import { useHistory } from 'react-router-dom';
+import Typewriter from 'typewriter-effect';
 
 const AboutMe = () => {
     const handleEmailClick = (e) => {
@@ -19,8 +19,32 @@ const AboutMe = () => {
                 <div className="hero-content flex-col lg:flex-row-reverse lg:ml-10">
                     <img src={img} className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
-                    <h5 className="text-2xl font-semibold">Discover</h5>
-                    <h1 className="text-5xl font-bold">About Me...</h1>
+                    <h5 className="text-2xl font-semibold text-blue-950">
+                    <Typewriter
+                        options={{ loop: true, autoStart: true }}
+                        onInit={(typewriter) => {
+                            typewriter.typeString('Discover')
+                            .pauseFor(5000)
+                            .callFunction(() => {
+                                console.log('String typed out!');
+                            })
+                            .start();
+                        }}
+                        />
+                    </h5>
+                    <h1 className="text-5xl font-bold text-blue-950">
+                    <Typewriter
+                        options={{ loop: true, autoStart: true }}
+                        onInit={(typewriter) => {
+                            typewriter.typeString('About Me...')
+                            .pauseFor(5000)
+                            .callFunction(() => {
+                                console.log('String typed out!');
+                            })
+                            .start();
+                        }}
+                        />
+                    </h1>
                     <hr />
                     <p className="py-6">Hey there, I'm Khadiza Jarin Roza, a Frontend React developer. I've mastered React and frontend skills through a dedicated 6-month course, passionate about crafting sleek and user-friendly interfaces.</p>
                         <div className="overflow-x-auto lg:flex lg:flex-row gap-10">
@@ -46,11 +70,31 @@ const AboutMe = () => {
                                 <tr>
                                     <td style={{ display: 'flex', alignItems: 'center' }}>
                                         <FaPhone style={{ marginRight: '5px' }} />
-                                        <span>Email:</span>
+                                        <span>Phone:</span>
                                     </td>
                                     <td>+8801315929336</td>
                                 </tr>
                                 {/* row 4 */}
+                                <tr>
+                                    <td style={{ display: 'flex', alignItems: 'center' }}>
+                                        <FaBookOpen style={{ marginRight: '5px' }} />
+                                        <span>Education:</span>
+                                    </td>
+                                    <td>UnderGraduate </td>
+                                </tr>
+                                {/* row 5 */}
+                                <tr>
+                                    <td style={{ display: 'flex', alignItems: 'center' }}>
+                                        <FaBookReader style={{ marginRight: '5px' }} />
+                                        <span>Currently Studing:</span>
+                                    </td>
+                                    <td>BS.c in CSE(6th semester) </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table className="table"> 
+                                <tbody>
+                                {/* row 6 */}
                                 <tr>
                                     <td style={{ display: 'flex', alignItems: 'center' }}>
                                         <FaAddressCard style={{ marginRight: '5px' }} />
@@ -58,11 +102,7 @@ const AboutMe = () => {
                                     </td>
                                     <td>Chittagong,Bangladesh</td>
                                 </tr>
-                                </tbody>
-                            </table>
-                            <table className="table"> 
-                                <tbody>
-                                {/* row 5 */}
+                                {/* row 7 */}
                                 <tr>
                                     <td style={{ display: 'flex', alignItems: 'center' }}>
                                         <FaEnvelope style={{ marginRight: '5px' }} />
@@ -70,7 +110,7 @@ const AboutMe = () => {
                                     </td>
                                     <td className="underline"><a href="#" onClick={handleEmailClick}>khadiza131310@gmail.com</a></td>
                                 </tr>
-                                {/* row 6 */}
+                                {/* row 8 */}
                                 <tr>
                                     <td style={{ display: 'flex', alignItems: 'center' }}>
                                         <FaLinkedin style={{ marginRight: '5px' }} />
@@ -78,7 +118,7 @@ const AboutMe = () => {
                                     </td>
                                     <td><Link className="underline" to="https://www.linkedin.com/in/khadiza-jarin-roza/">Khadiza Jarin Roza</Link></td>
                                 </tr>
-                                {/* row 7 */}
+                                {/* row 9*/}
                                 <tr>
                                     <td style={{ display: 'flex', alignItems: 'center' }}>
                                         <FaGithub style={{ marginRight: '5px' }} />
@@ -86,14 +126,14 @@ const AboutMe = () => {
                                     </td>
                                     <td><Link className="underline" to="https://github.com/khadizajarin">khadizajarin</Link></td>
                                 </tr>
-                                 {/* row 8 */}
+                                {/* row 10*/} 
                                  <tr>
                                     <td style={{ display: 'flex', alignItems: 'center' }}>
                                         <FaLaptopHouse style={{ marginRight: '5px' }} />
                                         <span>Freelancer:</span>
                                     </td>
                                     <td>Available</td>
-                                </tr>
+                                </tr> 
                                 </tbody>
                             </table>
                         </div>
