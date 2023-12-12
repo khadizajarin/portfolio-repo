@@ -1,6 +1,8 @@
 import { FaFile } from "react-icons/fa";
 import img from "./../assets/IMG_20231210_232358.jpg"
 import Typewriter from 'typewriter-effect';
+// import ParticleComponent from "./Particles/ParticleComponent";
+
 
 
 const Banner = () => {
@@ -26,7 +28,7 @@ const Banner = () => {
                     />
                 </h1>
                 <p className="mb-5">A React FrontEnd Developer.</p>
-                <a href="./../../public/resume.pdf" download>
+                <a href="resume.pdf" download>
                     <button className="btn glass text-white">Download Resume <FaFile></FaFile> </button>
                 </a>
                 

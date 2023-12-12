@@ -54,10 +54,30 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
             </h1>
             <hr />
             <p className="py-6 ml-10">Enter my Frontend Playground now! Witness the enchantment of design and functionality coming together. Enjoy a visual feast of the user-friendly websites that I have created. Look closely at these living gems:
-            <ul className='grid grid-cols-1 lg:grid-cols-3 underline font-semibold'>
-                <li className='flex justify-center '><Link to ="https://65685285dee9ea0665e31d65--sparkly-gnome-d71ffa.netlify.app/">Slick Here!</Link></li>
-                <li className='flex justify-center '><Link to ="https://654a72c013491d0510a34866--storied-donut-b1299b.netlify.app/https://65322a56d8a3b36d3750cc16--rainbow-biscotti-9c039c.netlify.app/">JobQuest</Link></li>
-                <li className='flex justify-center '><Link to ="">HostelPro</Link></li>
+            <ul className='grid grid-cols-1 lg:grid-cols-3  gap-6'>
+                <li className='flex justify-center'>
+                    <div className='flex flex-col'>
+                        <Link className='underline font-semibold' to ="https://65322a56d8a3b36d3750cc16--rainbow-biscotti-9c039c.netlify.app/">Slick Here!</Link>
+                        <Link className='underline' to ="https://github.com/khadizajarin/fashion-site-client-side">Client Side Github Repository</Link>
+                        <Link className='underline' to ="https://github.com/khadizajarin/fashion-site-server-side">Server Side Github Repository</Link>
+                    </div>
+                </li>
+                <li className='flex justify-center'>
+                    <div className='flex flex-col'>
+                        <Link className='underline font-semibold' to ="https://654a72c013491d0510a34866--storied-donut-b1299b.netlify.app/">JobQuest</Link>
+                        <Link className='underline' to ="https://github.com/khadizajarin/job-seeker-client">Client Side Github Repository</Link>
+                        <Link className='underline' to ="https://github.com/khadizajarin/job-seeker-server">Server Side Github Repository</Link>
+                    </div>
+                </li>
+                <li className='flex justify-center'>
+                    <div className='flex flex-col'>
+                        <Link className='underline font-semibold' to ="https://65685285dee9ea0665e31d65--sparkly-gnome-d71ffa.netlify.app/">HostelPro</Link>
+                        <Link className='underline' to ="https://github.com/khadizajarin/hostel-menu-client-side">Client Side Github Repository</Link>
+                        <Link className='underline' to ="https://github.com/khadizajarin/hostel-menu-server-side">Server Side Github Repository</Link>
+                    </div>
+                </li>
+                <li className='flex justify-center'></li>
+                <li className='flex justify-center'></li>
             </ul>
             </p>
             <div className="border-black px-10">
