@@ -4,6 +4,7 @@ import 'react-awesome-slider/dist/styles.css';
 import img1 from './../assets/HostelPro(1).png';
 import img4 from './../assets/JobQuest(1).png';
 import img7 from './../assets/Slick(1).png';
+import img10 from './../assets/TaskMan(1).png'
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-router-dom';
 
@@ -14,13 +15,14 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
         <AutoplaySlider
         className="h-1/2 w-full"
         play={true}
-        cancelOnInteraction={false} // should stop playing on user interaction
+        cancelOnInteraction={false} 
         interval={6000}
         >
         
           <div data-src={img1} />
           <div data-src={img4} />
           <div data-src={img7} />
+          <div data-src={img10} />
         </AutoplaySlider>
       );
 
@@ -43,7 +45,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
             <Typewriter
                 options={{ loop: true, autoStart: true }}
                 onInit={(typewriter) => {
-                    typewriter.typeString('Some of my works...')
+                    typewriter.typeString('My Works...')
                     .pauseFor(5000)
                     .callFunction(() => {
                         console.log('String typed out!');
@@ -54,30 +56,35 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
             </h1>
             <hr />
             <p className="py-6 ml-10">Enter my Frontend Playground now! Witness the enchantment of design and functionality coming together. Enjoy a visual feast of the user-friendly websites that I have created. Look closely at these living gems:
-            <ul className='grid grid-cols-1 lg:grid-cols-3  gap-6'>
-                <li className='flex justify-center'>
+            <ul className='grid grid-cols-1 lg:grid-cols-4 gap-6'>
+                <li className='flex justify-between'>
                     <div className='flex flex-col'>
                         <Link className='underline font-semibold' to ="https://65322a56d8a3b36d3750cc16--rainbow-biscotti-9c039c.netlify.app/">Slick Here!</Link>
                         <Link className='underline' to ="https://github.com/khadizajarin/fashion-site-client-side">Client Side Github Repository</Link>
                         <Link className='underline' to ="https://github.com/khadizajarin/fashion-site-server-side">Server Side Github Repository</Link>
                     </div>
                 </li>
-                <li className='flex justify-center'>
+                <li className='flex justify-between'>
                     <div className='flex flex-col'>
                         <Link className='underline font-semibold' to ="https://654a72c013491d0510a34866--storied-donut-b1299b.netlify.app/">JobQuest</Link>
                         <Link className='underline' to ="https://github.com/khadizajarin/job-seeker-client">Client Side Github Repository</Link>
                         <Link className='underline' to ="https://github.com/khadizajarin/job-seeker-server">Server Side Github Repository</Link>
                     </div>
                 </li>
-                <li className='flex justify-center'>
+                <li className='flex justify-between'>
                     <div className='flex flex-col'>
                         <Link className='underline font-semibold' to ="https://65685285dee9ea0665e31d65--sparkly-gnome-d71ffa.netlify.app/">HostelPro</Link>
                         <Link className='underline' to ="https://github.com/khadizajarin/hostel-menu-client-side">Client Side Github Repository</Link>
                         <Link className='underline' to ="https://github.com/khadizajarin/hostel-menu-server-side">Server Side Github Repository</Link>
                     </div>
                 </li>
-                <li className='flex justify-center'></li>
-                <li className='flex justify-center'></li>
+                <li className='flex justify-between'>
+                    <div className='flex flex-col'>
+                        <Link className='underline font-semibold' to ="https://thriving-froyo-4f56fe.netlify.app/">TaskMan</Link>
+                        <Link className='underline' to ="https://github.com/khadizajarin/job-task-client">Client Side Github Repository</Link>
+                        <Link className='underline' to ="https://github.com/khadizajarin/job-task-server">Server Side Github Repository</Link>
+                    </div>
+                </li>
             </ul>
             </p>
             <div className="border-black px-10">

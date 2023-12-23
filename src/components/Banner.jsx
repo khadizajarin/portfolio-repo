@@ -4,7 +4,6 @@ import Typewriter from 'typewriter-effect';
 // import ParticleComponent from "./Particles/ParticleComponent";
 
 
-
 const Banner = () => {
  
     return (
@@ -14,7 +13,7 @@ const Banner = () => {
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md">
                 <img className="mask mask-hexagon w-40 justify-center items-center mx-auto block" src={img} alt="" />
-                <h1 className="mb-5 text-5xl font-bold ">
+                <h1 className="mb-5 text-2xl lg:text-5xl font-bold ">
                     <Typewriter
                     options={{ loop: true, autoStart: true }}
                     onInit={(typewriter) => {
@@ -28,7 +27,7 @@ const Banner = () => {
                     />
                 </h1>
                 <p className="mb-5">A React FrontEnd Developer.</p>
-                <a href="resume.pdf" download>
+                <a href="khadiza_jarin_roza(resume).pdf" download>
                     <button className="btn glass text-white">Download Resume <FaFile></FaFile> </button>
                 </a>
                 
