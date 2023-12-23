@@ -13,7 +13,7 @@ const Banner = () => {
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md">
                 <img className="mask mask-hexagon w-40 justify-center items-center mx-auto block" src={img} alt="" />
-                <h1 className="mb-5 text-2xl lg:text-5xl font-bold ">
+                <h1 className="mb-5 text-4xl lg:text-5xl font-bold ">
                     <Typewriter
                     options={{ loop: true, autoStart: true }}
                     onInit={(typewriter) => {

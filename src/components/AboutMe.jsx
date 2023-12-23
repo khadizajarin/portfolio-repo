@@ -131,9 +131,7 @@ const AboutMe = () => {
                                     </td>
                                     <td className="flex items-center w-1/2 ">Available</td>
                                    
-                                </tr> 
-
-                                
+                                </tr>
                                 </tbody>
                             </table>
                             
