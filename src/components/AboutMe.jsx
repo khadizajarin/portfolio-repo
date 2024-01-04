@@ -15,9 +15,9 @@ const AboutMe = () => {
 
     return (
         <div>
-            <div className="hero  bg-fuchsia-200 text-blue-950">
-                <div className="hero-content flex-col lg:flex-row-reverse lg:ml-10">
-                    <img src={img} className="max-w-sm rounded-lg shadow-2xl" />
+            <div className="hero bg-fuchsia-200 text-blue-950">
+                <div className="hero-content flex-col lg:flex-row-reverse lg:mx-10">
+                    <img src={img} className=" rounded-lg shadow-2xl" />
                     <div>
                     <h5 className="text-2xl font-semibold text-blue-950">
                     <Typewriter
@@ -46,10 +46,10 @@ const AboutMe = () => {
                         />
                     </h1>
                     <hr />
-                    <p className="py-6">Hey there, I'm Khadiza Jarin Roza, a Frontend React developer. I've mastered React and frontend skills through a dedicated 6-month course, passionate about crafting sleek and user-friendly interfaces.</p>
+                    <p className="py-6  font-bold">Hey there, I'm Khadiza Jarin Roza, a Frontend React developer. I've mastered React and frontend skills through a dedicated 6-month course, passionate about crafting sleek and user-friendly interfaces.</p>
                         <div className="">
                             <table className="table "> 
-                                <tbody className="grid grid-cols-1 lg:grid-cols-2">
+                                <tbody className="grid grid-cols-1 lg:grid-cols-2 ">
                                 {/* row 1 */}
                                 <tr className="flex items-center">
                                     <td className="flex items-center flex-shrink-0 w-1/2">
@@ -124,14 +124,14 @@ const AboutMe = () => {
                                     <td className="flex items-center w-1/2"><Link className="underline" to="https://github.com/khadizajarin">khadizajarin</Link></td>
                                 </tr>
                                
-                                 <tr className="flex items-center border-b border-gray-100">
+                                 <tr className="flex items-center">
                                     <td className="flex items-center flex-shrink-0 w-1/2">
                                         <FaLaptopHouse style={{ marginRight: '5px' }} />
                                         <span>Freelancer:</span>
                                     </td>
-                                    <td className="flex items-center w-1/2 ">Available</td>
-                                   
+                                    <td className="flex items-center w-1/2 ">Available</td>  
                                 </tr>
+                                <hr />
                                 </tbody>
                             </table>
                             

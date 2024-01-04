@@ -8,6 +8,7 @@ import ProjectSlider from "./components/ProjectSlider"
 import Services from "./components/Services"
 import {Helmet} from "react-helmet";
 
+
 function App() {
 
   const imageUrl = './assets/briefcase-solid.svg';

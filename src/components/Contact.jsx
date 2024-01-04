@@ -5,8 +5,8 @@ import Typewriter from 'typewriter-effect';
 
 const Contact = () => {
     return (
-        <div>
-            <div className='pt-10'>
+        <div className="bg-fuchsia-100">
+            <div className=' pt-10'>
                 <h5 className="text-2xl font-semibold text-blue-950 ml-10">
                         <Typewriter
                             options={{ loop: true, autoStart: true }}
@@ -36,10 +36,10 @@ const Contact = () => {
                 <hr />
             </div>
 
-            <p className="text-blue-950 ml-10 pt-4">Got questions? Knock on my door anytime—I'm here for all your queries!</p>
+            <p className="text-blue-950 mx-10 pt-4 font-bold">Got questions? Knock on my door anytime, I'm here for all your queries!</p>
 
 
-            <div className=' mb-10 pl-10 text-blue-950'>
+            <div className=' pb-10 px-10 text-blue-950'>
                 <table className="table"> 
                     <tbody className="grid grid-cols-1 lg:grid-cols-2">
                                 {/* row 1 */}
@@ -88,8 +88,9 @@ const Contact = () => {
                                         <FaFacebook style={{ marginRight: '5px' }} />
                                         <span>Facebook:</span>
                                     </td>
-                                    <td className="w-3/5 underline"><Link to="https://www.facebook.com/khadizajarinroza?mibextid=gik2fB">Khadiza Jarin Roza</Link></td>
+                                    <td className="w-3/5 underline"><Link to="https://www.facebook.com/khadizajarinroza?mibextid=gik2fB">Khadiza Jarin Roza</Link></td> 
                                 </tr> 
+                                <hr />
                     </tbody>
                 </table>
             </div>

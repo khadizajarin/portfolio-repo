@@ -38,7 +38,7 @@ const Services = () => {
                 />
             </h1>
             <hr />
-            <p className="py-6 ml-10">I'm passionately investigating web development and driven to continuously learn new abilities. Every day presents an opportunity to take on new challenges and embrace how the world of design and coding is constantly changing. Utilize my skill set that includes:
+            <p className="py-6 ml-10 text-blue-950 font-bold">I'm passionately investigating web development and driven to continuously learn new abilities. Every day presents an opportunity to take on new challenges and embrace how the world of design and coding is constantly changing. Utilize my skill set that includes:
             </p>
 
             <div  className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-6 h-full ">

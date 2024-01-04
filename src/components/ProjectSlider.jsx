@@ -55,7 +55,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
                 />
             </h1>
             <hr />
-            <p className="py-6 ml-10">Enter my Frontend Playground now! Witness the enchantment of design and functionality coming together. Enjoy a visual feast of the user-friendly websites that I have created. Look closely at these living gems:
+            <p className="py-6 mx-10 text-blue-950 "><span className='font-bold'>Enter my Frontend Playground now! Witness the enchantment of design and functionality coming together. Enjoy a visual feast of the user-friendly websites that I have created. Look closely at these living gems:</span>
             <ul className='grid grid-cols-1 lg:grid-cols-4 gap-6'>
                 <li className='flex justify-between'>
                     <div className='flex flex-col'>
